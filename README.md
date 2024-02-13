@@ -71,6 +71,34 @@ lazydocker
 
 This command will launch the UI, where you can navigate using your keyboard to inspect and manage your Docker containers.
 
+### Step 5: Using the Minikube Dashboard
+
+The Minikube dashboard is a web-based Kubernetes user interface that allows you to manage and monitor your Kubernetes cluster and applications running on it. It provides a comprehensive overview of the various resources within your cluster, making it easier to understand and manage your deployments, pods, services, and more.
+
+#### Accessing the Dashboard
+
+To access the Minikube dashboard, run the following command:
+
+```bash
+minikube dashboard
+```
+
+This command will automatically open your default web browser and navigate to the dashboard's URL. If it does not open automatically, the command will print the URL, which you can manually enter in your browser.
+
+Within the Minikube dashboard, you will find:
+
+Overview of Cluster and Workloads: Get a high-level overview of the health and status of your Kubernetes cluster, including the number of nodes, pods, deployments, and services.
+
+Resource Management: View, create, modify, and delete Kubernetes resources such as deployments, services, pods, etc. This is useful for managing your application's lifecycle directly from the dashboard.
+
+Logs and Metrics: Access logs for individual pods, helping you troubleshoot issues or monitor the behavior of your applications. You can also view basic metrics like CPU and memory usage for your cluster and workloads.
+
+Namespace Management: Switch between and manage resources in different Kubernetes namespaces, making it easier to organize and control access to parts of your cluster.
+
+Search and Filter: Easily search for specific resources and filter them based on various criteria, simplifying the process of finding the information you need.
+
+The Minikube dashboard provides a user-friendly interface to interact with your Kubernetes cluster, offering a convenient way to deploy, manage, and troubleshoot applications without needing to use command-line tools. Whether you're new to Kubernetes or an experienced user, the dashboard can significantly enhance your workflow and productivity.
+
 ### Understanding the YAML Configuration
 
 The `kaufland-game.yaml` file contains two main parts:
