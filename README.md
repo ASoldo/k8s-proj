@@ -87,15 +87,15 @@ This command will automatically open your default web browser and navigate to th
 
 Within the Minikube dashboard, you will find:
 
-Overview of Cluster and Workloads: Get a high-level overview of the health and status of your Kubernetes cluster, including the number of nodes, pods, deployments, and services.
+**Overview of Cluster and Workloads**: Get a high-level overview of the health and status of your Kubernetes cluster, including the number of nodes, pods, deployments, and services.
 
-Resource Management: View, create, modify, and delete Kubernetes resources such as deployments, services, pods, etc. This is useful for managing your application's lifecycle directly from the dashboard.
+**Resource Management**: View, create, modify, and delete Kubernetes resources such as deployments, services, pods, etc. This is useful for managing your application's lifecycle directly from the dashboard.
 
-Logs and Metrics: Access logs for individual pods, helping you troubleshoot issues or monitor the behavior of your applications. You can also view basic metrics like CPU and memory usage for your cluster and workloads.
+**Logs and Metrics**: Access logs for individual pods, helping you troubleshoot issues or monitor the behavior of your applications. You can also view basic metrics like CPU and memory usage for your cluster and workloads.
 
-Namespace Management: Switch between and manage resources in different Kubernetes namespaces, making it easier to organize and control access to parts of your cluster.
+**Namespace Management**: Switch between and manage resources in different Kubernetes namespaces, making it easier to organize and control access to parts of your cluster.
 
-Search and Filter: Easily search for specific resources and filter them based on various criteria, simplifying the process of finding the information you need.
+**Search and Filter**: Easily search for specific resources and filter them based on various criteria, simplifying the process of finding the information you need.
 
 The Minikube dashboard provides a user-friendly interface to interact with your Kubernetes cluster, offering a convenient way to deploy, manage, and troubleshoot applications without needing to use command-line tools. Whether you're new to Kubernetes or an experienced user, the dashboard can significantly enhance your workflow and productivity.
 
