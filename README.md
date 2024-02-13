@@ -6,6 +6,8 @@ This guide provides instructions on how to deploy the Kaufland Game application 
 
 - **Minikube**: Ensure Minikube is installed on your system. Minikube allows you to run Kubernetes locally.
 - **kubectl**: The Kubernetes command-line tool, kubectl, allows you to run commands against Kubernetes clusters.
+- **k9s**: An optional terminal-based UI to interact with your Kubernetes clusters, providing a more intuitive way to monitor and manage your deployments.
+- **lazydocker**: A simple terminal UI for both docker and docker-compose, aimed at making managing containers easier.
 
 ## Getting Started
 
@@ -38,6 +40,36 @@ minikube service kaufland-service --url
 ```
 
 This command returns a URL that you can use in your web browser to access the application. The service is exposed on node port 30100, as specified in the YAML file.
+
+### Step 4: Inspect the Application
+
+**Using k9s**
+For a detailed inspection and management of your application, `k9s` is a powerful tool. It provides an interactive terminal UI to interact with your Kubernetes cluster, allowing you to:
+
+Monitor live logs from your containers.
+SSH into containers for direct command execution.
+View and manage Kubernetes resources (deployments, pods, services, etc.).
+To use `k9s`, simply run:
+
+```bash
+k9s
+```
+
+Navigate through the UI using your keyboard to explore the different views and manage your Kubernetes resources.
+
+**Using lazydocker**
+`lazydocker` is a simple terminal UI for managing your docker and docker-compose environments. It's especially useful for inspecting the Minikube Docker environment, where you can:
+
+Quickly view logs from your containers.
+Manage container lifecycle (start, stop, restart).
+Explore container and volume details.
+To start `lazydocker`, run:
+
+```bash
+lazydocker
+```
+
+This command will launch the UI, where you can navigate using your keyboard to inspect and manage your Docker containers.
 
 ### Understanding the YAML Configuration
 
