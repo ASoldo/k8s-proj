@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kaufland-game
+  labels:
+    app: kaufland
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: kaufland
+  template:
+    metadata:
+      labels:
+        app: kaufland
+    spec:
+      containers:
+        - name: kaufland-game
+          image: spearx/kaufland-game:main
+          ports:
+            - containerPort: 3000
