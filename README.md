@@ -162,3 +162,68 @@ And to stop Minikube:
 ```bash
 minikube stop
 ```
+
+## GitOps & ArgoCD Setup Instructions
+
+This guide walks you through the installation of ArgoCD, a declarative, GitOps
+continuous delivery tool for Kubernetes, and how to access its dashboard.
+
+### Install ArgoCD
+
+First, create a dedicated namespace for ArgoCD in your Kubernetes cluster and
+install ArgoCD with the following commands:
+
+```bash
+kubectl create namespace argocd
+kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
+```
+
+### Verify ArgoCD Pods
+
+After installing ArgoCD, check that all the ArgoCD pods are up and running:
+
+```bash
+kubectl get pod -n argocd -w
+```
+
+### Access the ArgoCD Dashboard
+
+To access the ArgoCD dashboard, you need to connect to the argocd-server service.
+First, identify the service:
+
+```bash
+kubectl get svc -n argocd
+```
+
+Next, use port forwarding to expose the argocd-server service locally:
+
+```bash
+kubectl port-forward -n argocd svc/argocd-server 8080:443
+```
+
+You can now access the ArgoCD dashboard by navigating to <http://localhost:8080>
+in your web browser.
+
+From there you can just copy and paste the url in the browser.
+
+### Login to the Dashboard
+
+The default username for the ArgoCD dashboard is `admin`. To obtain the initial
+admin password, first retrieve the encrypted password from the Kubernetes secret:
+
+```bash
+kubectl get secret argocd-initial-admin-secret -n argocd -o yaml
+```
+
+This command outputs the encrypted password. Copy the password hash and decode it:
+
+```bash
+echo password_from_previous_command | base64 --decode
+```
+
+With the decoded password, you can now login to the ArgoCD dashboard as the
+admin user.
+
+### Resources
+
+- `TechWorld with Nana` [ArgoCD Setup](https://www.youtube.com/watch?v=MeU5_k9ssrs)
