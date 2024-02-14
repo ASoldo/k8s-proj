@@ -224,6 +224,16 @@ echo password_from_previous_command | base64 --decode
 With the decoded password, you can now login to the ArgoCD dashboard as the
 admin user.
 
+### Apply application to the cluster
+
+In order for ArgoCD to know about our app we need to apply `application.yaml`:
+
+```bash
+kubectl apply -f application.yaml
+```
+
+Now we can see in ArgoCD Dashboard status of our app and its progress.
+
 ### Resources
 
 - `TechWorld with Nana` [ArgoCD Setup](https://www.youtube.com/watch?v=MeU5_k9ssrs)
