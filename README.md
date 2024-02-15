@@ -234,6 +234,16 @@ kubectl apply -f application.yaml
 
 Now we can see in ArgoCD Dashboard status of our app and its progress.
 
+### Access the application
+
+In order to get url to preview app in the browser first we need to run this:
+
+```bash
+minikube service kaufland-service -n argo-app --url
+```
+
+Now just copy and paste console output to your browser.
+
 ### Resources
 
 - `TechWorld with Nana` [ArgoCD Setup](https://www.youtube.com/watch?v=MeU5_k9ssrs)
