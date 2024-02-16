@@ -242,6 +242,8 @@ In order to get url to preview app in the browser first we need to run this:
 minikube service kaufland-service -n argo-app --url
 ```
 
+Now just copy and paste console output to your browser.
+
 ### Create EKS cluster with `eksctl`
 
 Use t2.medium - 2 core, 4 gb min req in Kubernetes environment.
@@ -257,7 +259,13 @@ Use this to delete all resources in AWS config.
 eksctl delete cluster -n cluster-soldo
 ```
 
-Now just copy and paste console output to your browser.
+Use these to switch between `Minikube` and `EKS` with aws credentials
+
+```bash
+kubectl config get-contexts
+kubectl config current-context
+kubectl config use-context minikube
+```
 
 ### Resources
 
