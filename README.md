@@ -273,6 +273,12 @@ kubectl config use-context minikube
 
 To manage multiple clusters we can add our EKS cluster to ArgoCD
 
+Login to ArgoCD with Cli:
+
+```bash
+argocd login localhost:8080 --username admin --insecure
+```
+
 ```bash
 argocd cluster add k8s-user@cluster-soldo.eu-central-1.eksctl.io --name k8s-cluster
 ```
