@@ -6,7 +6,7 @@ Docker Hub as `spearx/kaufland-game:main`.
 
 ## Prerequisites
 
-- **Minikube**: Ensure Minikube is installed on your system. Minikube allows
+- **minikube**: Ensure Minikube is installed on your system. Minikube allows
   you to run Kubernetes locally.
 - **kubectl**: The Kubernetes command-line tool, kubectl, allows you to
   run commands against Kubernetes clusters.
@@ -15,6 +15,12 @@ Docker Hub as `spearx/kaufland-game:main`.
   deployments.
 - **lazydocker**: A simple terminal UI for both docker and docker-compose,
   aimed at making managing containers easier.
+- **argocd cli**: A command-line tool that enables interaction with Argo CD for
+  managing Kubernetes applications through GitOps. It allows you to execute Argo
+  CD server operations from your terminal.
+- **eksctl**: A CLI for Amazon EKS that simplifies the process of creating,
+  managing, and deleting EKS clusters, streamlining the deployment of Kubernetes
+  workloads.
 
 ## Getting Started
 
