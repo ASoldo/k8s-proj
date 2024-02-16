@@ -277,7 +277,7 @@ kubectl config use-context minikube
 
 ### Add EKS cluster to ArgoCD
 
-Resource: YT - [Add external cluster to ArgoCD](https://www.youtube.com/watch?v=El7zRS5w0dc)
+- Resource: YT - [Add external cluster to ArgoCD](https://www.youtube.com/watch?v=El7zRS5w0dc)
 
 To manage multiple clusters we can add our EKS cluster to ArgoCD
 
