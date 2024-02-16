@@ -250,7 +250,9 @@ Use t2.medium - 2 core, 4 gb min req in Kubernetes environment.
 This will create all resources in AWS (VPC, EC2, EKS)
 
 ```bash
-eksctl create cluster -n cluster-soldo --nodegroup-name node-group-name-soldo --region eu-central-1 --node-type t2.medium --nodes 2 --version 1.28
+eksctl create cluster -n cluster-soldo --nodegroup-name node-group-name-soldo
+--region eu-central-1 --node-type t2.medium --nodes 2
+--version 1.28 --profile k8s-user
 ```
 
 Use this to delete all resources in AWS config.
@@ -265,6 +267,20 @@ Use these to switch between `Minikube` and `EKS` with aws credentials
 kubectl config get-contexts
 kubectl config current-context
 kubectl config use-context minikube
+```
+
+### Add EKS cluster to ArgoCD
+
+To manage multiple clusters we can add our EKS cluster to ArgoCD
+
+```bash
+argocd cluster add k8s-user@cluster-soldo.eu-central-1.eksctl.io --name k8s-cluster
+```
+
+Then we can list clusters:
+
+```bash
+argocd cluster list
 ```
 
 ### Resources
