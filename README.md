@@ -234,12 +234,27 @@ kubectl apply -f application.yaml
 
 Now we can see in ArgoCD Dashboard status of our app and its progress.
 
-### Access the application
+### Access the application with Minikube
 
 In order to get url to preview app in the browser first we need to run this:
 
 ```bash
 minikube service kaufland-service -n argo-app --url
+```
+
+### Create EKS cluster with `eksctl`
+
+Use t2.medium - 2 core, 4 gb min req in Kubernetes environment.
+This will create all resources in AWS (VPC, EC2, EKS)
+
+```bash
+eksctl create cluster -n cluster-soldo --nodegroup-name node-group-name-soldo --region eu-central-1 --node-type t2.medium --nodes 2 --version 1.28
+```
+
+Use this to delete all resources in AWS config.
+
+```bash
+eksctl delete cluster -n cluster-soldo
 ```
 
 Now just copy and paste console output to your browser.
