@@ -248,7 +248,13 @@ In order to get url to preview app in the browser first we need to run this:
 minikube service kaufland-service -n argo-app --url
 ```
 
-Now just copy and paste console output to your browser.
+Since we are using `LoadBalancer` we need to use this:
+
+```bash
+minikube tunnel
+```
+
+Now just copy and paste console output with `--url` to your browser.
 
 ### Create EKS cluster with `eksctl`
 

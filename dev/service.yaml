@@ -3,7 +3,6 @@ kind: Service
 metadata:
   name: kaufland-service
 spec:
-  # type: NodePort
   type: LoadBalancer
   selector:
     app: kaufland
@@ -11,4 +10,3 @@ spec:
     - protocol: TCP
       port: 3000
       targetPort: 3000
-      # nodePort: 30100
