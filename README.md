@@ -303,6 +303,12 @@ Then we can list clusters:
 argocd cluster list
 ```
 
+We can delete ArgoCD app like this:
+
+```bash
+argocd app delete dev-argo-app --cascade
+```
+
 ### Resources
 
 - `TechWorld with Nana` [ArgoCD Setup](https://www.youtube.com/watch?v=MeU5_k9ssrs)
