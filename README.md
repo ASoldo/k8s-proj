@@ -1,5 +1,11 @@
 # k8s-proj Deployment Guide
 
+![image](https://github.com/user-attachments/assets/fe833852-4317-450c-abf4-9c2903b64ecc)
+![image](https://github.com/user-attachments/assets/773a8500-961d-4114-8788-0c135c669c2d)
+![image](https://github.com/user-attachments/assets/164097a9-b543-41a0-9162-88848f5bb763)
+![image](https://github.com/user-attachments/assets/cd1ae726-c9a0-45c5-ab6d-86a7c8871e9f)
+![image](https://github.com/user-attachments/assets/37319e59-537c-45e3-af23-82365c1b3355)
+
 This guide provides instructions on how to deploy the Kaufland Game application
 on Kubernetes using Minikube. The application is containerized and available on
 Docker Hub as `spearx/kaufland-game:main`.
