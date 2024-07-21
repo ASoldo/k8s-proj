@@ -4,7 +4,7 @@
 ![image](https://github.com/user-attachments/assets/c3915cd9-35af-483e-b379-ab1e3001e495)
 ![image](https://github.com/user-attachments/assets/773a8500-961d-4114-8788-0c135c669c2d)
 ![image](https://github.com/user-attachments/assets/164097a9-b543-41a0-9162-88848f5bb763)
-![image](https://github.com/user-attachments/assets/cd1ae726-c9a0-45c5-ab6d-86a7c8871e9f)
+![image](https://github.com/user-attachments/assets/fffb1bb9-3a41-4993-a131-c972afd5b8fb)
 ![image](https://github.com/user-attachments/assets/37319e59-537c-45e3-af23-82365c1b3355)
 
 This guide provides instructions on how to deploy the Kaufland Game application
